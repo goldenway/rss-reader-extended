@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD46EE48166F4E9D008987D1 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AD46EE45166F4E9D008987D1 /* SVProgressHUD.bundle */; };
+		AD46EE49166F4E9D008987D1 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = AD46EE47166F4E9D008987D1 /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		AD46EE4B166F4F21008987D1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD46EE4A166F4F21008987D1 /* QuartzCore.framework */; };
+		AD46EE69166F636B008987D1 /* TBXML+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = AD46EE50166F636B008987D1 /* TBXML+Compression.m */; };
+		AD46EE6A166F636B008987D1 /* TBXML+HTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = AD46EE51166F636B008987D1 /* TBXML+HTTP.m */; };
+		AD46EE6B166F636B008987D1 /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = AD46EE52166F636B008987D1 /* TBXML.m */; };
+		AD46EE7D166F765C008987D1 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AD46EE7C166F765C008987D1 /* libz.dylib */; };
 		ADBA4E11166CE01300A600A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBA4E10166CE01300A600A9 /* UIKit.framework */; };
 		ADBA4E13166CE01300A600A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBA4E12166CE01300A600A9 /* Foundation.framework */; };
 		ADBA4E15166CE01300A600A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBA4E14166CE01300A600A9 /* CoreGraphics.framework */; };
@@ -16,12 +23,21 @@
 		ADBA4E23166CE01300A600A9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBA4E22166CE01300A600A9 /* Default.png */; };
 		ADBA4E25166CE01300A600A9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBA4E24166CE01300A600A9 /* Default@2x.png */; };
 		ADBA4E27166CE01300A600A9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBA4E26166CE01300A600A9 /* Default-568h@2x.png */; };
-		ADBA4E2A166CE01300A600A9 /* RRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBA4E29166CE01300A600A9 /* RRViewController.m */; };
-		ADBA4E2D166CE01300A600A9 /* RRViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADBA4E2B166CE01300A600A9 /* RRViewController_iPhone.xib */; };
-		ADBA4E30166CE01300A600A9 /* RRViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADBA4E2E166CE01300A600A9 /* RRViewController_iPad.xib */; };
+		ADBA4E2A166CE01300A600A9 /* RRReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBA4E29166CE01300A600A9 /* RRReaderViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD46EE45166F4E9D008987D1 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		AD46EE46166F4E9D008987D1 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		AD46EE47166F4E9D008987D1 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		AD46EE4A166F4F21008987D1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AD46EE50166F636B008987D1 /* TBXML+Compression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBXML+Compression.m"; sourceTree = "<group>"; };
+		AD46EE51166F636B008987D1 /* TBXML+HTTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBXML+HTTP.m"; sourceTree = "<group>"; };
+		AD46EE52166F636B008987D1 /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBXML.m; sourceTree = "<group>"; };
+		AD46EE54166F636B008987D1 /* TBXML+Compression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBXML+Compression.h"; sourceTree = "<group>"; };
+		AD46EE55166F636B008987D1 /* TBXML+HTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBXML+HTTP.h"; sourceTree = "<group>"; };
+		AD46EE56166F636B008987D1 /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBXML.h; sourceTree = "<group>"; };
+		AD46EE7C166F765C008987D1 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		ADBA4E0C166CE01300A600A9 /* RSSReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADBA4E10166CE01300A600A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		ADBA4E12166CE01300A600A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -35,10 +51,8 @@
 		ADBA4E22166CE01300A600A9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		ADBA4E24166CE01300A600A9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		ADBA4E26166CE01300A600A9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		ADBA4E28166CE01300A600A9 /* RRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RRViewController.h; sourceTree = "<group>"; };
-		ADBA4E29166CE01300A600A9 /* RRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RRViewController.m; sourceTree = "<group>"; };
-		ADBA4E2C166CE01300A600A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RRViewController_iPhone.xib; sourceTree = "<group>"; };
-		ADBA4E2F166CE01300A600A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RRViewController_iPad.xib; sourceTree = "<group>"; };
+		ADBA4E28166CE01300A600A9 /* RRReaderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RRReaderViewController.h; sourceTree = "<group>"; };
+		ADBA4E29166CE01300A600A9 /* RRReaderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RRReaderViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD46EE7D166F765C008987D1 /* libz.dylib in Frameworks */,
+				AD46EE4B166F4F21008987D1 /* QuartzCore.framework in Frameworks */,
 				ADBA4E11166CE01300A600A9 /* UIKit.framework in Frameworks */,
 				ADBA4E13166CE01300A600A9 /* Foundation.framework in Frameworks */,
 				ADBA4E15166CE01300A600A9 /* CoreGraphics.framework in Frameworks */,
@@ -55,11 +71,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD46EE44166F4E9D008987D1 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				AD46EE45166F4E9D008987D1 /* SVProgressHUD.bundle */,
+				AD46EE46166F4E9D008987D1 /* SVProgressHUD.h */,
+				AD46EE47166F4E9D008987D1 /* SVProgressHUD.m */,
+			);
+			name = SVProgressHUD;
+			path = "SVProgressHUD-master/SVProgressHUD";
+			sourceTree = SOURCE_ROOT;
+		};
+		AD46EE4C166F636B008987D1 /* TBXML parser */ = {
+			isa = PBXGroup;
+			children = (
+				AD46EE4F166F636B008987D1 /* TBXML-Code */,
+				AD46EE53166F636B008987D1 /* TBXML-Headers */,
+			);
+			name = "TBXML parser";
+			path = "TBXML-master";
+			sourceTree = SOURCE_ROOT;
+		};
+		AD46EE4F166F636B008987D1 /* TBXML-Code */ = {
+			isa = PBXGroup;
+			children = (
+				AD46EE50166F636B008987D1 /* TBXML+Compression.m */,
+				AD46EE51166F636B008987D1 /* TBXML+HTTP.m */,
+				AD46EE52166F636B008987D1 /* TBXML.m */,
+			);
+			path = "TBXML-Code";
+			sourceTree = "<group>";
+		};
+		AD46EE53166F636B008987D1 /* TBXML-Headers */ = {
+			isa = PBXGroup;
+			children = (
+				AD46EE54166F636B008987D1 /* TBXML+Compression.h */,
+				AD46EE55166F636B008987D1 /* TBXML+HTTP.h */,
+				AD46EE56166F636B008987D1 /* TBXML.h */,
+			);
+			path = "TBXML-Headers";
+			sourceTree = "<group>";
+		};
 		ADBA4E01166CE01300A600A9 = {
 			isa = PBXGroup;
 			children = (
 				ADBA4E16166CE01300A600A9 /* RSSReader */,
 				ADBA4E0F166CE01300A600A9 /* Frameworks */,
+				AD46EE7C166F765C008987D1 /* libz.dylib */,
 				ADBA4E0D166CE01300A600A9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +136,7 @@
 				ADBA4E10166CE01300A600A9 /* UIKit.framework */,
 				ADBA4E12166CE01300A600A9 /* Foundation.framework */,
 				ADBA4E14166CE01300A600A9 /* CoreGraphics.framework */,
+				AD46EE4A166F4F21008987D1 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -87,11 +146,11 @@
 			children = (
 				ADBA4E1F166CE01300A600A9 /* RRAppDelegate.h */,
 				ADBA4E20166CE01300A600A9 /* RRAppDelegate.m */,
-				ADBA4E28166CE01300A600A9 /* RRViewController.h */,
-				ADBA4E29166CE01300A600A9 /* RRViewController.m */,
-				ADBA4E2B166CE01300A600A9 /* RRViewController_iPhone.xib */,
-				ADBA4E2E166CE01300A600A9 /* RRViewController_iPad.xib */,
+				ADBA4E28166CE01300A600A9 /* RRReaderViewController.h */,
+				ADBA4E29166CE01300A600A9 /* RRReaderViewController.m */,
 				ADBA4E17166CE01300A600A9 /* Supporting Files */,
+				AD46EE44166F4E9D008987D1 /* SVProgressHUD */,
+				AD46EE4C166F636B008987D1 /* TBXML parser */,
 			);
 			path = RSSReader;
 			sourceTree = "<group>";
@@ -166,8 +225,7 @@
 				ADBA4E23166CE01300A600A9 /* Default.png in Resources */,
 				ADBA4E25166CE01300A600A9 /* Default@2x.png in Resources */,
 				ADBA4E27166CE01300A600A9 /* Default-568h@2x.png in Resources */,
-				ADBA4E2D166CE01300A600A9 /* RRViewController_iPhone.xib in Resources */,
-				ADBA4E30166CE01300A600A9 /* RRViewController_iPad.xib in Resources */,
+				AD46EE48166F4E9D008987D1 /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,7 +238,11 @@
 			files = (
 				ADBA4E1D166CE01300A600A9 /* main.m in Sources */,
 				ADBA4E21166CE01300A600A9 /* RRAppDelegate.m in Sources */,
-				ADBA4E2A166CE01300A600A9 /* RRViewController.m in Sources */,
+				ADBA4E2A166CE01300A600A9 /* RRReaderViewController.m in Sources */,
+				AD46EE49166F4E9D008987D1 /* SVProgressHUD.m in Sources */,
+				AD46EE69166F636B008987D1 /* TBXML+Compression.m in Sources */,
+				AD46EE6A166F636B008987D1 /* TBXML+HTTP.m in Sources */,
+				AD46EE6B166F636B008987D1 /* TBXML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,22 +255,6 @@
 				ADBA4E1A166CE01300A600A9 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		ADBA4E2B166CE01300A600A9 /* RRViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ADBA4E2C166CE01300A600A9 /* en */,
-			);
-			name = RRViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		ADBA4E2E166CE01300A600A9 /* RRViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ADBA4E2F166CE01300A600A9 /* en */,
-			);
-			name = RRViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -235,8 +281,9 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -256,8 +303,9 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -270,7 +318,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RSSReader/RSSReader-Prefix.pch";
 				INFOPLIST_FILE = "RSSReader/RSSReader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -281,7 +331,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RSSReader/RSSReader-Prefix.pch";
 				INFOPLIST_FILE = "RSSReader/RSSReader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -305,6 +357,7 @@
 				ADBA4E35166CE01300A600A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

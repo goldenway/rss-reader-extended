@@ -7,15 +7,15 @@
 //
 
 #import "RRAppDelegate.h"
-
-#import "RRViewController.h"
+#import "RRReaderViewController.h"
 
 @implementation RRAppDelegate
 
 - (void)dealloc
 {
-    [_window release];
-    [_viewController release];
+    self.window = nil;
+    self.navController = nil;
+
     [super dealloc];
 }
 
@@ -23,13 +23,13 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[[RRViewController alloc] initWithNibName:@"RRViewController_iPhone" bundle:nil] autorelease];
-    } else {
-        self.viewController = [[[RRViewController alloc] initWithNibName:@"RRViewController_iPad" bundle:nil] autorelease];
-    }
-    self.window.rootViewController = self.viewController;
+    
+    RRReaderViewController* readerVC = [[[RRReaderViewController alloc] init] autorelease];
+    self.navController = [[[UINavigationController alloc] initWithRootViewController:readerVC] autorelease];
+    
+    self.window.rootViewController = self.navController;
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

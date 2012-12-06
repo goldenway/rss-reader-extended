@@ -8,12 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@class RRViewController;
-
 @interface RRAppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
-
-@property (strong, nonatomic) RRViewController *viewController;
+@property (retain, nonatomic) UIWindow *window;
+@property (retain, nonatomic) UINavigationController *navController;
 
 @end
