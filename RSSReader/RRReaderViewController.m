@@ -21,6 +21,7 @@
 #define TEXT_WIDTH 280
 #define SHARING_CELL_HEIGHT 37
 #define QUOTE_CELL_DELTA_HEIGHT 20
+#define TWEET_MAX_LENGTH 140
 
 @interface RRReaderViewController () <UITableViewDataSource, UITableViewDelegate, RRSharingCellDelegate, UIActionSheetDelegate, MFMailComposeViewControllerDelegate>
 
@@ -261,9 +262,18 @@
 {
     if ([TWTweetComposeViewController canSendTweet])
     {
+        //checking tweet length
+        NSMutableString *tweet;
+        
+        if (self.selectedItem.link.length + self.selectedItem.text.length > TWEET_MAX_LENGTH)
+            tweet = [NSMutableString stringWithString:[self.selectedItem.text substringToIndex:TWEET_MAX_LENGTH - self.selectedItem.link.length]];
+        else
+            tweet = [NSMutableString stringWithString:self.selectedItem.text];;
+        
+        //TWTweetComposeViewController
         TWTweetComposeViewController *tweetSheet = [[[TWTweetComposeViewController alloc] init] autorelease];
         [tweetSheet addURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@", self.selectedItem.link]]];
-        [tweetSheet setInitialText:[NSString stringWithFormat:@"%@", self.selectedItem.text]];
+        [tweetSheet setInitialText:tweet];
         
         [self presentViewController:tweetSheet animated:YES completion:nil];
     }
