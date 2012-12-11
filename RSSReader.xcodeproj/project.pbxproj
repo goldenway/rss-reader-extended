@@ -14,16 +14,21 @@
 		AD46EE6A166F636B008987D1 /* TBXML+HTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = AD46EE51166F636B008987D1 /* TBXML+HTTP.m */; };
 		AD46EE6B166F636B008987D1 /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = AD46EE52166F636B008987D1 /* TBXML.m */; };
 		AD46EE7D166F765C008987D1 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AD46EE7C166F765C008987D1 /* libz.dylib */; };
+		ADA1F53E1671F7320005824C /* RRSharingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA1F53D1671F7320005824C /* RRSharingCell.m */; };
+		ADA1F5431672152D0005824C /* share_btn_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA1F5411672152D0005824C /* share_btn_normal.png */; };
+		ADA1F5451672225F0005824C /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA1F5441672225F0005824C /* Twitter.framework */; };
+		ADA1F547167224500005824C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA1F546167224500005824C /* MessageUI.framework */; };
+		ADA1F54C1675E1DB0005824C /* RRQuote.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA1F54B1675E1DA0005824C /* RRQuote.m */; };
 		ADBA4E11166CE01300A600A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBA4E10166CE01300A600A9 /* UIKit.framework */; };
 		ADBA4E13166CE01300A600A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBA4E12166CE01300A600A9 /* Foundation.framework */; };
 		ADBA4E15166CE01300A600A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBA4E14166CE01300A600A9 /* CoreGraphics.framework */; };
-		ADBA4E1B166CE01300A600A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADBA4E19166CE01300A600A9 /* InfoPlist.strings */; };
 		ADBA4E1D166CE01300A600A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBA4E1C166CE01300A600A9 /* main.m */; };
 		ADBA4E21166CE01300A600A9 /* RRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBA4E20166CE01300A600A9 /* RRAppDelegate.m */; };
 		ADBA4E23166CE01300A600A9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBA4E22166CE01300A600A9 /* Default.png */; };
 		ADBA4E25166CE01300A600A9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBA4E24166CE01300A600A9 /* Default@2x.png */; };
 		ADBA4E27166CE01300A600A9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBA4E26166CE01300A600A9 /* Default-568h@2x.png */; };
 		ADBA4E2A166CE01300A600A9 /* RRReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBA4E29166CE01300A600A9 /* RRReaderViewController.m */; };
+		ADCFDEBD1677400700187667 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADCFDEBB1677400700187667 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,12 +43,18 @@
 		AD46EE55166F636B008987D1 /* TBXML+HTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBXML+HTTP.h"; sourceTree = "<group>"; };
 		AD46EE56166F636B008987D1 /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBXML.h; sourceTree = "<group>"; };
 		AD46EE7C166F765C008987D1 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		ADA1F53C1671F7320005824C /* RRSharingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRSharingCell.h; sourceTree = "<group>"; };
+		ADA1F53D1671F7320005824C /* RRSharingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRSharingCell.m; sourceTree = "<group>"; };
+		ADA1F5411672152D0005824C /* share_btn_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = share_btn_normal.png; path = assets/share_btn_normal.png; sourceTree = "<group>"; };
+		ADA1F5441672225F0005824C /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		ADA1F546167224500005824C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		ADA1F54A1675E1DA0005824C /* RRQuote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRQuote.h; sourceTree = "<group>"; };
+		ADA1F54B1675E1DA0005824C /* RRQuote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRQuote.m; sourceTree = "<group>"; };
 		ADBA4E0C166CE01300A600A9 /* RSSReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADBA4E10166CE01300A600A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		ADBA4E12166CE01300A600A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ADBA4E14166CE01300A600A9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		ADBA4E18166CE01300A600A9 /* RSSReader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RSSReader-Info.plist"; sourceTree = "<group>"; };
-		ADBA4E1A166CE01300A600A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ADBA4E1C166CE01300A600A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ADBA4E1E166CE01300A600A9 /* RSSReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSSReader-Prefix.pch"; sourceTree = "<group>"; };
 		ADBA4E1F166CE01300A600A9 /* RRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RRAppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +64,8 @@
 		ADBA4E26166CE01300A600A9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		ADBA4E28166CE01300A600A9 /* RRReaderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RRReaderViewController.h; sourceTree = "<group>"; };
 		ADBA4E29166CE01300A600A9 /* RRReaderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RRReaderViewController.m; sourceTree = "<group>"; };
+		ADCFDEBC1677400700187667 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		ADCFDEC216774A6D00187667 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADA1F547167224500005824C /* MessageUI.framework in Frameworks */,
+				ADA1F5451672225F0005824C /* Twitter.framework in Frameworks */,
 				AD46EE7D166F765C008987D1 /* libz.dylib in Frameworks */,
 				AD46EE4B166F4F21008987D1 /* QuartzCore.framework in Frameworks */,
 				ADBA4E11166CE01300A600A9 /* UIKit.framework in Frameworks */,
@@ -112,12 +127,19 @@
 			path = "TBXML-Headers";
 			sourceTree = "<group>";
 		};
+		ADA1F53F1672150A0005824C /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				ADA1F5411672152D0005824C /* share_btn_normal.png */,
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
 		ADBA4E01166CE01300A600A9 = {
 			isa = PBXGroup;
 			children = (
 				ADBA4E16166CE01300A600A9 /* RSSReader */,
 				ADBA4E0F166CE01300A600A9 /* Frameworks */,
-				AD46EE7C166F765C008987D1 /* libz.dylib */,
 				ADBA4E0D166CE01300A600A9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -137,6 +159,9 @@
 				ADBA4E12166CE01300A600A9 /* Foundation.framework */,
 				ADBA4E14166CE01300A600A9 /* CoreGraphics.framework */,
 				AD46EE4A166F4F21008987D1 /* QuartzCore.framework */,
+				AD46EE7C166F765C008987D1 /* libz.dylib */,
+				ADA1F5441672225F0005824C /* Twitter.framework */,
+				ADA1F546167224500005824C /* MessageUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -144,10 +169,15 @@
 		ADBA4E16166CE01300A600A9 /* RSSReader */ = {
 			isa = PBXGroup;
 			children = (
+				ADA1F53F1672150A0005824C /* assets */,
 				ADBA4E1F166CE01300A600A9 /* RRAppDelegate.h */,
 				ADBA4E20166CE01300A600A9 /* RRAppDelegate.m */,
 				ADBA4E28166CE01300A600A9 /* RRReaderViewController.h */,
 				ADBA4E29166CE01300A600A9 /* RRReaderViewController.m */,
+				ADA1F54A1675E1DA0005824C /* RRQuote.h */,
+				ADA1F54B1675E1DA0005824C /* RRQuote.m */,
+				ADA1F53C1671F7320005824C /* RRSharingCell.h */,
+				ADA1F53D1671F7320005824C /* RRSharingCell.m */,
 				ADBA4E17166CE01300A600A9 /* Supporting Files */,
 				AD46EE44166F4E9D008987D1 /* SVProgressHUD */,
 				AD46EE4C166F636B008987D1 /* TBXML parser */,
@@ -158,8 +188,8 @@
 		ADBA4E17166CE01300A600A9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ADCFDEBB1677400700187667 /* Localizable.strings */,
 				ADBA4E18166CE01300A600A9 /* RSSReader-Info.plist */,
-				ADBA4E19166CE01300A600A9 /* InfoPlist.strings */,
 				ADBA4E1C166CE01300A600A9 /* main.m */,
 				ADBA4E1E166CE01300A600A9 /* RSSReader-Prefix.pch */,
 				ADBA4E22166CE01300A600A9 /* Default.png */,
@@ -205,6 +235,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				uk,
 			);
 			mainGroup = ADBA4E01166CE01300A600A9;
 			productRefGroup = ADBA4E0D166CE01300A600A9 /* Products */;
@@ -221,11 +252,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADBA4E1B166CE01300A600A9 /* InfoPlist.strings in Resources */,
 				ADBA4E23166CE01300A600A9 /* Default.png in Resources */,
 				ADBA4E25166CE01300A600A9 /* Default@2x.png in Resources */,
 				ADBA4E27166CE01300A600A9 /* Default-568h@2x.png in Resources */,
 				AD46EE48166F4E9D008987D1 /* SVProgressHUD.bundle in Resources */,
+				ADA1F5431672152D0005824C /* share_btn_normal.png in Resources */,
+				ADCFDEBD1677400700187667 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,18 +275,21 @@
 				AD46EE69166F636B008987D1 /* TBXML+Compression.m in Sources */,
 				AD46EE6A166F636B008987D1 /* TBXML+HTTP.m in Sources */,
 				AD46EE6B166F636B008987D1 /* TBXML.m in Sources */,
+				ADA1F53E1671F7320005824C /* RRSharingCell.m in Sources */,
+				ADA1F54C1675E1DB0005824C /* RRQuote.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ADBA4E19166CE01300A600A9 /* InfoPlist.strings */ = {
+		ADCFDEBB1677400700187667 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				ADBA4E1A166CE01300A600A9 /* en */,
+				ADCFDEBC1677400700187667 /* en */,
+				ADCFDEC216774A6D00187667 /* uk */,
 			);
-			name = InfoPlist.strings;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -278,10 +313,11 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
@@ -300,10 +336,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
