@@ -22,12 +22,11 @@
 #define SHARING_CELL_HEIGHT 37
 #define QUOTE_CELL_DELTA_HEIGHT 20
 
-static RRQuote *selectedItem;
-
 @interface RRReaderViewController () <UITableViewDataSource, UITableViewDelegate, RRSharingCellDelegate, UIActionSheetDelegate, MFMailComposeViewControllerDelegate>
 
 @property (nonatomic, retain) UITableView *rssTableView;
 @property (nonatomic, retain) NSMutableArray *items;
+@property (nonatomic, retain) RRQuote *selectedItem;
 @property (nonatomic, retain) UIActionSheet *sharingActionSheet;
 
 @end
@@ -229,7 +228,7 @@ static RRQuote *selectedItem;
 
 - (void)shareItemWithTag:(int)tag
 {
-    selectedItem = [self.items objectAtIndex:tag];
+    self.selectedItem = [self.items objectAtIndex:tag];
     
     self.sharingActionSheet = [[[UIActionSheet alloc] initWithTitle:NSLocalizedString(@"Share via", @"Sharing action sheet title")
                                                            delegate:self
@@ -263,7 +262,8 @@ static RRQuote *selectedItem;
     if ([TWTweetComposeViewController canSendTweet])
     {
         TWTweetComposeViewController *tweetSheet = [[[TWTweetComposeViewController alloc] init] autorelease];
-        [tweetSheet setInitialText:[NSString stringWithFormat:@"%@\n%@", selectedItem.link, selectedItem.text]];
+        [tweetSheet addURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@", self.selectedItem.link]]];
+        [tweetSheet setInitialText:[NSString stringWithFormat:@"%@", self.selectedItem.text]];
         
         [self presentViewController:tweetSheet animated:YES completion:nil];
     }
@@ -301,8 +301,7 @@ static RRQuote *selectedItem;
 	MFMailComposeViewController *picker = [[MFMailComposeViewController alloc] init];
 	picker.mailComposeDelegate = self;
 	[picker setSubject:NSLocalizedString(@"Quote from bash.im", @"Email subject")];
-	[picker setToRecipients:[NSArray arrayWithObject:@"mail@example.com"]];
-	[picker setMessageBody:[NSString stringWithFormat:@"%@\n\n%@", selectedItem.text, selectedItem.link] isHTML:NO];
+	[picker setMessageBody:[NSString stringWithFormat:@"%@\n\n%@", self.selectedItem.text, self.selectedItem.link] isHTML:YES];
 	
     [self presentViewController:picker animated:YES completion:nil];
     [picker release];
